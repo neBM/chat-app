@@ -1,0 +1,70 @@
+#layoutContaienr {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+#contactsContainer {
+    flex-grow: 0;
+    flex-basis: 300px;
+}
+#chatlogContainer {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+}
+
+#contactsList {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#contactsList li {
+    padding: 20px;
+    cursor: pointer;
+}
+
+#contactsList li:hover {
+    background-color: #512b58;
+}
+
+#chatlog {
+    background-color: #FFFFFF;
+    flex-grow: 1;
+    color: #000000;
+    overflow-y: auto;
+}
+
+#actionsContainer {
+    display: flex;
+}
+#messageArea {
+    flex-grow: 1;
+}
+
+#sendButton {
+    flex-grow: 0;
+}
+
+#chatlog ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#chatlog .message {
+    margin: 10px;
+    display: flex;
+}
+
+#chatlog .message .content {
+    padding: 10px;
+    background-color: #512b58;
+    color: #FFFFFF;
+    display: inline-block;
+
+}
+
+#chatlog .message.sender {
+    flex-direction: row-reverse;
+}
